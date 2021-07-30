@@ -1,2 +1,6 @@
 # STRAP
-I developed this program during the 3rd-year of my undergraduate study.   This program is developed to analyze small-scale structures. Also, it assists students in understanding the basics of matrix structural analysis by providing graphical data input with friendly academic terminologies. In addition to this, this program initiates students to adopt programming for all real-world and academic problems. However, for complicated structures, the results and outputs from this structure are not well tested.
+I developed this program during the 3rd-year of my undergraduate study using C\#. The program is developed to analyze small-scale 2D structures like beam, truss and plane frames. It uses the matrix method to solve for the member forces. The analysis procedure is very interactive and provide graphical data input with friendly academic terminologies. 
+
+![screenShot](src/Resources/STRAP_StartPage.png)
+
+You can download the Windows instalation file from `Excutable/STRAPV1.ms` 
