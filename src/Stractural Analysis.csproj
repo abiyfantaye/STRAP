@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{867A7C7E-6A5B-435A-8014-F39EC7677E7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StracturalControls</RootNamespace>
+    <AssemblyName>StracturalControls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ManifestCertificateThumbprint>37A14C534FC0D36BA02F47F36EB04E4B7645334C</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Stractural Analysis_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Addisale\Desktop\STRAP V1\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddConstant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddConstant.Designer.cs">
+      <DependentUpon>AddConstant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDisplacement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDisplacement.Designer.cs">
+      <DependentUpon>AddDisplacement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConcetratedLoad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConcetratedLoad.Designer.cs">
+      <DependentUpon>ConcetratedLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrawPanel.Designer.cs">
+      <DependentUpon>DrawPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fixed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fixed.Designer.cs">
+      <DependentUpon>Fixed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hindge.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Hindge.Designer.cs">
+      <DependentUpon>Hindge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Joint.cs" />
+    <Compile Include="JointLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JointLoad.Designer.cs">
+      <DependentUpon>JointLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LableGraphics.cs" />
+    <Compile Include="LineLoad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LineLoad.Designer.cs">
+      <DependentUpon>LineLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadDialog.Designer.cs">
+      <DependentUpon>LoadDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadSummary.Designer.cs">
+      <DependentUpon>LoadSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberControle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MemberControle.Designer.cs">
+      <DependentUpon>MemberControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mMatrixs.cs" />
+    <Compile Include="MovingBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MovingBox.Designer.cs">
+      <DependentUpon>MovingBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyButton.Designer.cs">
+      <DependentUpon>MyButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherTypesOfLoading.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OtherTypesOfLoading.Designer.cs">
+      <DependentUpon>OtherTypesOfLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pin.Designer.cs">
+      <DependentUpon>Pin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddConstant.resx">
+      <DependentUpon>AddConstant.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDisplacement.resx">
+      <DependentUpon>AddDisplacement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConcetratedLoad.resx">
+      <DependentUpon>ConcetratedLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawPanel.resx">
+      <DependentUpon>DrawPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fixed.resx">
+      <DependentUpon>Fixed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hindge.resx">
+      <DependentUpon>Hindge.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JointLoad.resx">
+      <DependentUpon>JointLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LineLoad.resx">
+      <DependentUpon>LineLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadDialog.resx">
+      <DependentUpon>LoadDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadSummary.resx">
+      <DependentUpon>LoadSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberControle.resx">
+      <DependentUpon>MemberControle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovingBox.resx">
+      <DependentUpon>MovingBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyButton.resx">
+      <DependentUpon>MyButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherTypesOfLoading.resx">
+      <DependentUpon>OtherTypesOfLoading.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pin.resx">
+      <DependentUpon>Pin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roler.resx">
+      <DependentUpon>Roler.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solution.resx">
+      <DependentUpon>Solution.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupportDialog.resx">
+      <DependentUpon>SupportDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrapizoidalLoding.resx">
+      <DependentUpon>TrapizoidalLoding.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="triangul.resx">
+      <DependentUpon>triangul.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriangularLoad.resx">
+      <DependentUpon>TriangularLoad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RecordFile.cs" />
+    <Compile Include="Roler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Roler.Designer.cs">
+      <DependentUpon>Roler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sMatrix.cs" />
+    <Compile Include="Solution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solution.Designer.cs">
+      <DependentUpon>Solution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupportDialog.Designer.cs">
+      <DependentUpon>SupportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrapizoidalLoding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrapizoidalLoding.Designer.cs">
+      <DependentUpon>TrapizoidalLoding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="triangul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="triangul.Designer.cs">
+      <DependentUpon>triangul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TriangularLoad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TriangularLoad.Designer.cs">
+      <DependentUpon>TriangularLoad.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixed2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue hills.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesi.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesk.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me8.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me5.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\me4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Member.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insert.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new insert.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new insert1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\them.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theMostNew.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grids.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddRefference.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newadd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Picture %281%29.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Picture %286%29.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Momement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newMoo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConsMoment.jpg" />
+    <None Include="Stractural Analysis_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
