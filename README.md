@@ -1,0 +1,2 @@
+# STRAP
+I developed this program during the 3rd-year of my undergraduate study.   This program is developed to analyze small-scale structures. Also, it assists students in understanding the basics of matrix structural analysis by providing graphical data input with friendly academic terminologies. In addition to this, this program initiates students to adopt programming for all real-world and academic problems. However, for complicated structures, the results and outputs from this structure are not well tested.
