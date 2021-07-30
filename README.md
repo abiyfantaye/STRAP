@@ -3,4 +3,4 @@ I developed this program during the 3rd-year of my undergraduate study using C\#
 
 ![screenShot](src/Resources/STRAP_StartPage.png)
 
-You can download the Windows instalation file from `Excutable/STRAPV1.ms` 
+You can download the Windows instalation file from `Excutable/STRAPV1.msi` 
